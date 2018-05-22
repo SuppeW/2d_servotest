@@ -5,8 +5,8 @@ Servo servo2;
 
 int Xpos = 90, Ypos = 90, XposLast = 90, YposLast = 90;
 
-const int servo1_pin = 1;
-const int servo2_pin = 2;
+const int servoX_pin = 1;
+const int servoY_pin = 2;
 const int JoyX_pin = 3;
 const int JoyY_pin = 4;
 const int laser_pin = 5;
@@ -20,8 +20,8 @@ int switchState = 0;
 
 
 void setup() {
-  servo1.attach(servo1_pin);
-  servo2.attach(servo2_pin);
+  servo1.attach(servoX_pin);
+  servo2.attach(servoY_pin);
 }
 
 void loop() {
